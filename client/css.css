@@ -1,0 +1,13 @@
+.message{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: midnightblue;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #236400;
+    border-radius: 50%;
+    display: inline-block;
+}
