@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <script src="https://cdn.tiny.cloud/1/lgb05d3whnyj3cb56ijtnnxuji7nq9p4vi68271463ulwouz/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css.css">
-
     <title>basic-chat</title>
 </head>
 
-<body>
 
+<body>
 
 <label class="usrname" for="usrname">what's your name?</label>
 <input class="usrname" type="text" id="usrname">
 <button class="usrname btn btn-primary" type="button" id="usrname-btn">this is me!</button>
 
-<div class="fluid-container">
-    <div>
+<div class="container-fluid">
+    <div class ="row">
+        <div class="col-6">
         <label for="chat-input">write your message</label>
-        <input type="text" id="chat-input">
+        <input type="text" id="chat-input" class="col-4">
+        </div>
     </div>
     <div>
         <button class="btn btn-primary" type="button" id="sendAll">Send to all!</button>
@@ -37,9 +38,7 @@
         </div>
     </div>
 </div>
-
 <script src="/socket.io/socket.io.js"></script>
 <script src="main.js"></script>
-
 </body>
 </html>
